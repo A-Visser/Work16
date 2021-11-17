@@ -22,7 +22,7 @@ int main(){
     printf("End of program\n");
   } else {
     printf("Child PID:%d \n", getpid());
-    float r = (rand()%1000/(float)1000)*3 +2;
+    int r = rand()%3+2;
     sleep(r);
     printf("Child is finished \n");
     return r;
